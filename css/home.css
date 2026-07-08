@@ -1,0 +1,224 @@
+/* Keyframes for fade-slide effect */
+/* from https://www.joshwcomeau.com/animation/keyframe-animations/*/
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+/* Home Hero Section */
+.home-hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  color: white;
+  padding: 0 8%; 
+}
+
+.image-container-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.image-container-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-container-home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.home-hero-section .content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px; 
+  width: 100%;
+  padding: 2rem 0;
+animation: fadeSlideIn 1s ease-out both;
+  animation-delay: 0.3s; 
+}
+
+.home-hero-section h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4.2rem; 
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  color: white;
+  animation: fadeSlideIn 1s ease-out both;
+  animation-delay: 0.3s;
+}
+
+.home-hero-section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #eedda5;
+  margin-top: 2rem;
+
+  max-width: 600px;
+  animation: fadeSlideIn 1s ease-out both;
+  animation-delay: 0.6s;
+}
+
+.home-hero-section .button {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  animation: fadeSlideIn 1s ease-out both;
+  animation-delay: 0.9s;
+}
+
+/*anout section*/
+.about {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100rem;
+  margin: 3rem auto;
+  gap: 7rem;
+}
+
+.about-text {
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-text h2 {
+  font-size: 2.75rem;
+  color: #b0101c;
+  font-weight: 700;
+  margin: 0 ;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.about-text p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+ margin-top: 3rem;
+  color: #000000;
+  margin: 1.25rem 0rem;
+  flex-grow: 1;
+}
+
+.custom {
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.custom-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100rem;
+  margin: 5rem auto;
+  gap: 7rem;
+}
+
+.custom-text {
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.custom-text h2 {
+  font-size: 2.75rem;
+  color: #b0101c;
+  font-weight: 700;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.custom-text p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-top: 3rem;
+
+  color: #000000;
+  margin: 1.25rem 0rem;
+  flex-grow: 1;
+}
+
+@media (max-width: 48rem) {
+  .home-hero-section h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .home-hero-section p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .home-hero-section .content {
+    padding: 1rem;
+    align-items: center;
+  }
+  .home-hero-section .button {
+  font-size: 1rem;
+}
+  .about-container,
+  .custom-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 0.75rem;
+    align-items: left;
+  }
+
+  .about-text,
+  .custom-text {
+    text-align: left;
+    max-width: 90%;
+  }
+ .about-text h2,
+  .custom-text h2 {
+    font-size: 2rem;
+  }
+ .about-text p,
+  .custom-text p {
+    font-size: 1rem;
+  }
+
+}
+

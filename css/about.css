@@ -1,0 +1,97 @@
+/* Hero */
+.about-hero {
+  background: url("../img/about/about-hero.jpg") no-repeat center center/cover;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.about-hero:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3.2rem;
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-hero p {
+    color: #EEDDA5;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Offer Section Link Styles */
+.offer-list {
+  font-size: 1.2rem;
+  line-height: 2;
+  padding-left: 1.5rem; /* ensures better alignment */
+  margin-bottom: 1.5rem;
+}
+
+.offer-list li {
+  margin-bottom: 0.75rem;
+}
+
+.offer-link {
+  color: #BB0D17;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.offer-link:hover {
+  color: #eedda5;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .about-text {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .static-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .offer-list {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .offer-list li {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+

@@ -1,0 +1,299 @@
+.shop-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 8rem 1.5rem; 
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 6rem; 
+}
+
+
+
+/* button */
+button{
+    background-color: #BB0D17;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+  background-color: #EEDDA5;
+}
+
+.option {
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: -5rem;
+    box-shadow: 0.2rem 0.2rem 0.3125rem rgb(149, 149, 149),0.2rem 0.2rem 0.3125rem rgb(149, 149, 149);
+    border-width: 0.12rem;
+    border-radius: 0.6rem;
+    width: 100%;
+    max-width: none;    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;  
+    opacity: 0; 
+    animation: slideInUp 0.6s ease-out forwards;
+    transition: transform 0.3s ease,box-shadow 0.3s ease, background-color 0.4s ease}
+
+.option:hover .image-container img {
+  transform: scale(1.1);
+}
+.option:hover{
+    transform: scale(1.1);
+
+    background-color: #fff9e2;
+    /* transform: scale(2.05) translateY(-5px); */
+    box-shadow: 0.2rem 0.2rem 0.3125rem rgb(149, 149, 149),
+              0.8rem 0.8rem 0.5rem rgb(149, 149, 149);
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 15rem;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* When hovering the entire card */
+
+
+
+.option h2 {
+  font-size: 1.1rem;
+  color: #BB0D17;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.option h3 {
+  font-weight: normal;
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.option h4 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: black;
+  margin: 0.5rem 0;
+}
+
+.option button {
+    background-color: #BB0D17;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+}
+
+.option button:hover {
+  background-color: #EEDDA5;
+}
+
+.price-and-button {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* aligns the bottom of text and button */
+    margin-top: auto; /* pushes this block to the bottom of the card */
+    gap: 1rem;
+}
+.price-and-button h4 {
+    margin-top: 0.5rem;
+}
+.price-and-button button {
+  margin-bottom: 0.4rem; /* adjust as needed */
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+/* animation */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 48rem) {
+  .header_part{
+    padding: 1rem;
+  }
+  .price-and-button {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .option button {
+    width: 100%;
+  }
+
+  .items-list {
+    padding: 1.5rem;
+    gap: 8rem;
+  }
+}
+
+@media (max-width: 70rem) { 
+  .shop-lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 48rem) { /* 768px */
+  .shop-lists {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* noscript fallback  */
+.home-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem 1.5rem;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 6rem; 
+}
+
+
+/* Reuse the same .option styles (already global) */
+.home-items .option {
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0.2rem 0.2rem 0.3125rem rgb(149, 149, 149), 0.2rem 0.2rem 0.3125rem rgb(149, 149, 149);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease;
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.home-items .option:hover {
+  transform: scale(1.1);
+  background-color: #fff9e2;
+  box-shadow: 0.2rem 0.2rem 0.3125rem rgb(149, 149, 149),
+              0.8rem 0.8rem 0.5rem rgb(149, 149, 149);
+}
+
+.home-items .image-container {
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.home-items .image-container img {
+  width: 100%;
+  height: 15rem;
+  transition: transform 0.4s ease;
+  object-fit: cover;
+  display: block;
+}
+
+.home-items .option:hover .image-container img {
+  transform: scale(1.1);
+}
+
+.home-items h2 {
+  font-size: 1.1rem;
+  color: #BB0D17;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.home-items h3 {
+  font-weight: normal;
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.home-items h4 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: black;
+  margin: 0.5rem 0;
+}
+
+.home-items .price-and-button {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  gap: 1rem;
+}
+
+.home-items .price-and-button h4 {
+  margin-top: 0.5rem;
+}
+
+.home-items .price-and-button button {
+  background-color: #BB0D17;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.4rem;
+}
+
+.home-items .price-and-button button:hover {
+  background-color: #EEDDA5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 70rem) {
+  .home-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  .home-items {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 8rem;
+  }
+
+  .home-items .price-and-button {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .home-items .option button {
+    width: 100%;
+  }
+}

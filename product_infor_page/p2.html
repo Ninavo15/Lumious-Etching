@@ -1,0 +1,128 @@
+<!-- https://www.w3schools.com/tags/tag_noscript.asp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Luminous Etching Shop</title>
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/product.css" rel="stylesheet">
+  <link href="../css/header-footer.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo1.png" alt="the logo icon"></a>
+        </div>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="nav-toggle" role = "button"aria-label="Toggle navigation"aria-controls="nav-links"tabindex="0">
+    <i class="ri-menu-line" aria-hidden="true"></i>
+  </label>       
+        <ul class="nav-links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../about.html">ABOUT</a></li>
+            <li><a href="../shop.html">SHOP</a></li>
+            <li><a href="../contact.html">CUSTOM</a></li>
+        </ul>
+        <div class="cart">
+           <a href="../cart.html" class="cart-icon" role="button" aria-label="Shopping cart, 0 items">
+            <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+            <span class="item-count">0</span>
+            </a>
+
+        </div>
+    </nav>
+  <!-- Header -->
+  <div class="header_part">
+    <h1>Product Information</h1>
+    <p>Information about your product</p>    
+  </div>
+
+  <!-- Product Content -->
+  <main class="body_content">
+    <div class="items-list">
+      <div class="item option" role="region" aria-label="Flora Glow, 2004 Subaru WRX, $350">
+        <div class="image-container">
+          <img src="../img/product/TaiLight2.jpeg" alt="Flora Glow Tail Light for 2004 Subaru WRX">
+        </div>
+        <div class="product-details">
+          <h2>Flora Glow</h2>
+          <div class="rating" aria-label="Rated 5 out of 5 stars">★★★★★ <span style="font-size:1rem;">(5.0)</span></div>
+          <h3>2004 Subaru WRX</h3>
+          <p class="description">
+            Bring organic elegance to your WRX with the Flora Glow. Precision-etched acrylic blooms with ambient light for a bold floral statement on the road.
+          </p>
+
+          <!-- Price -->
+          <h4 class="product-price">Product Price: $350</h4>
+
+          <!-- Quantity -->
+          <div class="quantity-control" role="group" aria-label="Quantity selector">
+            <label for="quantity">Quantity</label><br>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              value="1"
+              min="1"
+              aria-label="Quantity"
+              required
+            >
+          </div>
+
+          <!-- Add to Cart -->
+          <div class="add-to-cart-wrapper">
+            <form action="../cart2.html" method="get">
+              <button type="submit" aria-label="Add Flora Glow to cart">Add To Cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+   <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Column 1: Logo + Location + Phone -->
+        <div class="footer-col logo-col">
+        <img src="../img/logo1.png" alt="Luminous Etching logo">
+        <p>Location: Vancouver, BC</p>
+        <p>Phone: (123) 456-7890</p>
+        </div>
+
+        <div class="footer-col mid-links">
+        <ul>
+            <li><a href="../index.html">Privacy Policy</a></li>
+            <li><a href="../index.html">Terms of Service</a></li>
+            <li><a href="../index.html">Q&A</a></li>
+            <li><a href="../citation.html">Citation</a></li> 
+        </ul>
+        </div>
+
+        <div class="footer-col footer-nav-links">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../shop.html">Shop</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-col social-icons">
+        <a href="#"><i class="ri-mail-line"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

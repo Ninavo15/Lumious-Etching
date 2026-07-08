@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customize Your Ride | Luminous Etching</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header-footer.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo1.png" alt="the logo icon"></a>
+        </div>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="nav-toggle" role = "button"aria-label="Toggle navigation"aria-controls="nav-links"tabindex="0">
+    <i class="ri-menu-line" aria-hidden="true"></i>
+  </label>       
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="contact.html">CUSTOM</a></li>
+        </ul>
+        <div class="cart">
+           <a href="cart.html" class="cart-icon" role="button" aria-label="Shopping cart, 0 items">
+            <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+            <span class="item-count">0</span>
+            </a>
+
+        </div>
+    </nav>
+  <!-- Hero Section -->
+  <section class="custom-hero">
+    <div class="custom-hero-content">
+      <h1>Custom Engraving Just for You</h1>
+      <p>Want your taillights to reflect your personality? We’ll help bring your design to life, just tell us your idea!</p>
+    </div>
+  </section>
+
+  <main>
+<section class="custom-contact">
+  <div class="custom-container">
+    <h2>Request Your Custom Design</h2>
+    
+    <p class="how-it-works-text">Just fill out the form below. We’ll reach out to you via <strong>email</strong> or <strong>Instagram</strong> to confirm your idea and finalize your custom taillight.
+    </p>
+    
+    <form class="custom-form" action="contact-submit.html" method="GET">
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name"placeholder="Lina" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="instagram">Instagram Handle</label>
+        <input type="text" id="instagram" name="instagram" placeholder="@yourusername">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Idea *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Describe your design..." required></textarea>
+      </div>
+        <a href="contact-submit.html" class="btn-wrapper" >
+            <button class="button">Submit Request</button>
+        </a>
+    </form>
+  </div>
+</section>
+</main>
+    <!-- footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Column 1: Logo + Location + Phone -->
+        <div class="footer-col logo-col">
+        <img src="img/logo1.png" alt="Luminous Etching logo">
+        <p>Location: Vancouver, BC</p>
+        <p>Phone: (123) 456-7890</p>
+        </div>
+
+        <div class="footer-col mid-links">
+        <ul>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="index.html">Terms of Service</a></li>
+            <li><a href="index.html">Q&A</a></li>
+            <li><a href="citation.html">Citation</a></li> 
+        </ul>
+        </div>
+
+        <div class="footer-col footer-nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-col social-icons">
+        <a href="#"><i class="ri-mail-line"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+    </div>
+    </footer>
+        <script src="js/script.js"></script>
+</body>
+</html>

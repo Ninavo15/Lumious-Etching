@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart | Lily Bloom – Luminous Etching</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/header-footer.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- navigation bar -->
+  <nav class="nav-bar">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo1.png" alt="the logo icon"></a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="nav-toggle" role="button" aria-label="Toggle navigation" aria-controls="nav-links" tabindex="0">
+      <i class="ri-menu-line" aria-hidden="true"></i>
+    </label>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="contact.html">CUSTOM</a></li>
+    </ul>
+    <div class="cart">
+      <a href="cart.html" class="cart-icon" role="button" aria-label="Shopping cart, 0 items">
+        <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+        <span class="item-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Cart Header -->
+  <div class="header_part">
+    <h1>Your Cart</h1>
+    <p>Below are the products you've added to your cart</p>
+  </div>
+
+  <!-- Cart Body -->
+  <div class="body_content">
+    <div class="items-list">
+      <div class="cart-item">
+        <div class="cart-content">
+          <div class="cart-image">
+            <img src="img/product/TailLight4.jpeg" alt="Lily Bloom Tail Light for 2010 Scion tC" />
+          </div>
+          <div class="cart-info">
+            <h2>Lily Bloom</h2>
+            <h3>2010 Scion tC</h3>
+            <p>Unit Price: $400</p>
+            <div class="quantity-wrap">
+              <i class="ri-subtract-line qty-icon decrease" title="Decrease quantity"></i>
+              <span class="qty">1</span>
+              <i class="ri-add-line qty-icon increase" title="Increase quantity"></i>
+            </div>
+            <p class="item-total">Item Total: $400</p>
+          </div>
+        </div>
+        <i class="ri-close-large-line remove-icon" title="Remove item"></i>
+      </div>
+
+      <!-- Grand Total -->
+      <div class="cart-total">
+        <h2>Grand Total: $400</h2>
+      </div>
+
+      <!-- Purchase Button -->
+      <div class="purchase-wrapper">
+        <form action="checkout.html" method="get">
+          <button type="submit" class="purchase-button">Purchase</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Column 1: Logo + Location + Phone -->
+      <div class="footer-col logo-col">
+        <img src="img/logo1.png" alt="Luminous Etching logo" />
+        <p>Location: Vancouver, BC</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+
+      <div class="footer-col mid-links">
+        <ul>
+          <li><a href="index.html">Privacy Policy</a></li>
+          <li><a href="index.html">Terms of Service</a></li>
+          <li><a href="index.html">Q&A</a></li>
+          <li><a href="citation.html">Citation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col social-icons">
+        <a href="#"><i class="ri-mail-line"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

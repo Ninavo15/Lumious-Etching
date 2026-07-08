@@ -1,0 +1,29 @@
+@media (max-width: 48rem) {
+
+  .items-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 2rem 1rem;
+    gap: 6rem;
+  }
+
+  .option {
+    max-width: 90%;
+  }
+}
+@media (max-width: 35rem) {
+
+  .header_part h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .header_part p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  
+}
+

@@ -1,0 +1,156 @@
+/* Hero */
+.custom-hero {
+  background: url("../img/home-custom.jpg") no-repeat center center/cover;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.custom-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.custom-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.custom-hero h1 {
+    font-size: 3.2rem;
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-hero p {
+    color: #EEDDA5;
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Contact Form */
+.custom-contact {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.custom-contact h2 {
+  font-size: 2.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #b0101c;
+  margin-bottom: 1rem;
+}
+
+.custom-container {
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+}
+
+.how-it-works-text {
+  font-size: 1rem;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  max-width: 70rem;
+margin-bottom: 2rem;
+
+}
+
+.custom-form {
+  width: 100%;           
+  text-align: left;      
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align:left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:hover,
+.form-group textarea:hover,
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #eedda5; 
+  outline: none;
+  box-shadow: 0 0 0 2px #eedda5;
+}
+
+.custom-container i {
+    font-size: 7rem;
+    color:#000000;
+}
+.offer-link {
+  color: #BB0D17;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.offer-link:hover {
+  color: #eedda5;
+}
+
+@media (max-width: 768px) {
+  .custom-container {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .custom-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.95rem;
+  }
+
+  .custom-hero h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
+  .custom-hero p,
+  .how-it-works-text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}

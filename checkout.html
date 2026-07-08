@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout | Luminous Etching</title>
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo1.png" alt="the logo icon"></a>
+        </div>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="nav-toggle" role = "button"aria-label="Toggle navigation"aria-controls="nav-links"tabindex="0">
+    <i class="ri-menu-line" aria-hidden="true"></i>
+  </label>       
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="contact.html">CUSTOM</a></li>
+        </ul>
+        <div class="cart">
+           <a href="cart.html" class="cart-icon" role="button" aria-label="Shopping cart, 0 items">
+            <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+            <span class="item-count">0</span>
+            </a>
+
+        </div>
+    </nav>
+
+  <!-- Header Section -->
+  <header class="header_part" role="banner">
+    <h1>Checkout</h1>
+    <p>Please fill all in the check out form to purchase</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="body_part" role="main">
+    <section class="checkout-container" aria-labelledby="checkout-heading">
+    <form id="checkout-form" class="checkout-form-grid" role="form" aria-describedby="checkout-instructions" action="confirmation.html" method="get">
+        <div class="left-section">
+          <h2>Customer Info</h2>
+          <label for="name" class="sr-only">Full Name</label>
+          <input type="text" placeholder="Full Name" name="name" id="name" required />
+
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" placeholder="Email" name="email" id="email" required />
+
+          <h2>Shipping Address</h2>
+          <label for="address1" class="sr-only">Address Line 1</label>
+          <input type="text" placeholder="Address Line 1" name="address1" id="address1" required />
+
+          <label for="address2" class="sr-only">Address Line 2</label>
+          <input type="text" placeholder="Address Line 2" name="address2" id="address2" />
+
+          <label for="city" class="sr-only">City</label>
+          <input type="text" placeholder="City" name="city" id="city" required />
+
+          <label for="state" class="sr-only">State/Province</label>
+          <input type="text" placeholder="State/Province" name="state" id="state" required />
+
+          <label for="postal" class="sr-only">Postal Code</label>
+          <input type="text" placeholder="Postal Code" name="postal" id="postal" required />
+
+          <label for="country" class="sr-only">Country</label>
+          <input type="text" placeholder="Country" name="country" id="country" required />
+        </div>
+
+        <div class="right-section">
+          <h2>Payment Details</h2>
+          <label for="card" class="sr-only">Card Number</label>
+          <input type="text" placeholder="Card Number" name="card" id="card" required />
+
+          <label for="expiry" class="sr-only">Expiry Date</label>
+          <input type="text" placeholder="Expiry Date (MM/YY)" name="expiry" id="expiry" required />
+
+          <label for="cvv" class="sr-only">CVV</label>
+          <input type="text" placeholder="CVV" name="cvv" id="cvv" required />
+        </div>
+
+        <div class="form-button-wrapper">
+          <button type="submit" aria-label="Submit checkout form">Finish & Confirm</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+    <!-- footer -->
+
+    <footer>
+    <div class="footer-container">
+        <!-- Column 1: Logo + Location + Phone -->
+        <div class="footer-col logo-col">
+        <img src="img/logo1.png" alt="Luminous Etching logo">
+        <p>Location: Vancouver, BC</p>
+        <p>Phone: (123) 456-7890</p>
+        </div>
+
+        <div class="footer-col mid-links">
+        <ul>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="index.html">Terms of Service</a></li>
+            <li><a href="index.html">Q&A</a></li>
+            <li><a href="citation.html">Citation</a></li> 
+        </ul>
+        </div>
+
+        <div class="footer-col footer-nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-col social-icons">
+        <a href="#"><i class="ri-mail-line"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+    </div>
+    </footer>
+</body>
+
+</html>
